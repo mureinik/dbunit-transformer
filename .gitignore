@@ -1,0 +1,20 @@
+# Maven
+target/
+
+# Maven Release Plugin
+pom.xml.releaseBackup
+release.properties
+
+# IntelliJ
+.idea
+*.ipr
+*.iml
+
+# Eclipse
+.settings
+.project
+.classpath
+
+# vi/vim
+.*.swp
+*~
