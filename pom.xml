@@ -16,6 +16,16 @@
       </license>
     </licenses>
 
+    <developers>
+      <developer>
+        <id>mureinik</id>
+        <name>Allon Mureinik</name>
+        <email>mureinik@gmail.com</email>
+        <url>http://il.linkedin.com/in/mureinik/</url>
+        <timezone>+2</timezone>
+      </developer>
+    </developers>
+
     <groupId>com.github.mureinik</groupId>
     <artifactId>dbunit-transformer</artifactId>
     <version>1.0-SNAPSHOT</version>
