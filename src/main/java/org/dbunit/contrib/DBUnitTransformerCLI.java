@@ -82,7 +82,16 @@ public class DBUnitTransformerCLI {
     }
 
     private void exitOnError(DBUnitTransformerExitCodes exitCode) {
+        exitOnError(exitCode, null);
+    }
+
+    public void exitOnError(DBUnitTransformerExitCodes exitCode, String message) {
         if (exitCode.isError()) {
+            if (message != null) {
+                PrintWriter errorWriter = new PrintWriter(System.err);
+                helpFormatter.printWrapped(errorWriter, message.length(), message);
+                errorWriter.flush();
+            }
             System.exit(exitCode.getExitCode());
         }
     }

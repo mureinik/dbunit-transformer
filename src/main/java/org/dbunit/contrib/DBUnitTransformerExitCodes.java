@@ -8,7 +8,9 @@ package org.dbunit.contrib;
 public enum DBUnitTransformerExitCodes {
     OK(0),
     ERROR_ARGS(1),
-    ERROR_INFILE(2);
+    ERROR_INFILE(2),
+    ERROR_INFILE_READ(3),
+    ERROR_OUTFILE_WRITE(4);
 
     private int rc;
 
