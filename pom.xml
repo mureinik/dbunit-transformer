@@ -8,6 +8,13 @@
     <name>DBUnit Transfotmer</name>
     <description>A utility to transform DBUnit files</description>
     <url>http://github.com/mureinik/dbunit-transformer</url>
+    <licenses>
+      <license>
+          <name>GNU Lesser General Public License, Version 2.1</name>
+          <url>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html</url>
+          <distribution>repo</distribution>
+      </license>
+    </licenses>
 
     <groupId>com.github.mureinik</groupId>
     <artifactId>dbunit-transformer</artifactId>
