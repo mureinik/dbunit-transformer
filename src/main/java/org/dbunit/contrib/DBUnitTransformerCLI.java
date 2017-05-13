@@ -60,9 +60,8 @@ public class DBUnitTransformerCLI {
 
             if (!inFile.exists()) {
                 String errorMessage = String.format("inFile %s does not exist", inFile.getAbsolutePath());
-                PrintWriter errorWriter = new PrintWriter(System.err);
+                PrintWriter errorWriter = new PrintWriter(System.err, true);
                 helpFormatter.printWrapped(errorWriter, errorMessage.length(), errorMessage);
-                errorWriter.flush();
                 exitCode = DBUnitTransformerExitCodes.ERROR_INFILE;
             }
         } catch (ParseException e) {
