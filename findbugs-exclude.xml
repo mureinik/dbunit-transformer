@@ -1,0 +1,9 @@
+<FindBugsFilter>
+    <!-- 
+    We use a PrintWrite to print to System.err. 
+    There's no way to affect its encoding
+    -->
+    <Match>
+        <Bug pattern="DM_DEFAULT_ENCODING" />
+    </Match>
+</FindBugsFilter>
