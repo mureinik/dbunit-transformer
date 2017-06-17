@@ -4,4 +4,4 @@ jdk:
   - oraclejdk8
 
 script:
-    mvn install -B -V
+    mvn install findbugs:check -B -V
